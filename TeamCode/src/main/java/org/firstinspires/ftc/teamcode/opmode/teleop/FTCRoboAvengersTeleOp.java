@@ -35,9 +35,9 @@ import org.firstinspires.ftc.robotcore.external.navigation.CurrentUnit;
  * https://gm0.org/en/latest/docs/software/tutorials/mecanum-drive.html#field-centric
  */
 
-@TeleOp(name="RoboAvengers TeleOp", group="Robot")
+@TeleOp(name="Robo Avengers MI States TeleOp", group="Robot")
 //@Disabled
-public class FTCOnBotRoboAvengersTeleOp extends LinearOpMode
+public class FTCRoboAvengersTeleOp extends LinearOpMode
 {
     /* Declare OpMode members. */
     public DcMotor  leftFrontDrive   = null; //the left front drivetrain motor
