@@ -31,6 +31,7 @@ package org.firstinspires.ftc.teamcode.opmode.auto;
 
 import com.qualcomm.hardware.rev.RevHubOrientationOnRobot;
 import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
+import com.qualcomm.robotcore.eventloop.opmode.Disabled;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.hardware.DcMotor;
 import com.qualcomm.robotcore.hardware.DcMotorEx;
@@ -60,8 +61,8 @@ import org.firstinspires.ftc.robotcore.external.navigation.CurrentUnit;
  * Remove or comment out the @Disabled line to add this OpMode to the Driver Station OpMode list
  */
 
-@Autonomous(name="Encoder Observation Parking Auton", group="Robot")
-//@Disabled
+@Autonomous(name="Robo Avengers Encoder Observation Parking Auton", group="Robot")
+@Disabled
 public class FTCEncodersObservationParkingAuton extends LinearOpMode
 {
     /* Declare OpMode members. */

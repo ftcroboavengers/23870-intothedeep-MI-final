@@ -61,9 +61,9 @@ import org.firstinspires.ftc.robotcore.external.navigation.CurrentUnit;
  * Remove or comment out the @Disabled line to add this OpMode to the Driver Station OpMode list
  */
 
-@Autonomous(name="Encoder Single Sample Observation Parking Auton", group="Robot")
+@Autonomous(name="Robo Avengers 1 Sample Obs Parking Auton", group="Robot")
 //@Disabled
-public class FTCEncodersSafeParkingOnlyAuton extends LinearOpMode
+public class FTCEncodersSingleSampleObsParking extends LinearOpMode
 {
     /* Declare OpMode members. */
     public DcMotor  leftFrontDrive   = null; //the left front drivetrain motor
