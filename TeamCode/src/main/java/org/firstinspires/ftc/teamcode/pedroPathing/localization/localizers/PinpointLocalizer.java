@@ -66,16 +66,18 @@ public class PinpointLocalizer extends Localizer {
     public PinpointLocalizer(HardwareMap map, Pose setStartPose){
         hardwareMap = map;
         // TODO: replace this with your Pinpoint port
+        // [RAC] no changes done, our pinpoint hardware is connected to port 1 with name "odo"
         odo = hardwareMap.get(GoBildaPinpointDriver.class,"odo");
 
         //This uses mm, to use inches divide these numbers by 25.4
         //odo.setOffsets(-84.0, -168.0); //these are tuned for 3110-0002-0001 Product Insight #1
-        // Robo Avengers changed to 0 and
+        // [RAC] changed to 0 and -143.675
         odo.setOffsets(0.0, -143.675 );
         //TODO: If you find that the gobilda Yaw Scaling is incorrect you can edit this here
       //  odo.setYawScalar(1.0);
         //TODO: Set your encoder resolution here, I have the Gobilda Odometry products already included.
         //TODO: If you would like to use your own odometry pods input the ticks per mm in the commented part below
+        //[RAC] no change as we are using goBILDA 4 bar pods
         odo.setEncoderResolution(GoBildaPinpointDriver.GoBildaOdometryPods.goBILDA_4_BAR_POD);
         //odo.setEncoderResolution(13.26291192);
         //TODO: Set encoder directions
